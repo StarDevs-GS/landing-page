@@ -371,15 +371,15 @@ body {
     border: 1px solid #ffd34d;
 }
 
-.text-green {
+.technology-card #text-green {
     color: #4aff8b;
 }
 
-.text-blue {
+.technology-card #text-blue {
     color: #58c8ff;
 }
 
-.text-yellow {
+.technology-card #text-yellow {
     color: #ffd34d;
 }
 
