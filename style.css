@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    
 }
 
 body {
-    background-color: #1a1a2e;
+    background-color: #10111f;
     color: white;
     min-height: 100vh;
 }
@@ -151,7 +152,6 @@ body {
     background-color: #6354e0;
 }
 
-
 .carousel-arrow {
     position: absolute;
     top: 50%;
@@ -185,6 +185,96 @@ body {
 .arrow-right {
     right: 30px;
 }
+
+
+.problem-section {
+    background-color: #10111f;
+    padding: 90px 0 75px;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.section-tag {
+    display: inline-block;
+    background-color: #3c3784;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 34px;
+}
+
+.problem-section h2 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 28px;
+    color: white;
+}
+
+.problem-description {
+    font-size: 20px;
+    line-height: 1.35;
+    color: white;
+    max-width: 980px;
+    margin-bottom: 44px;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px 55px;
+}
+
+.problem-card {
+    background-color: #241624;
+    border: 1px solid #ff5a5f;
+    border-radius: 8px;
+    padding: 28px 28px 26px;
+    min-height: 205px;
+}
+
+.problem-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.problem-card p {
+    font-size: 17px;
+    line-height: 1.25;
+    color: white;
+}
+
+.problem-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 28px;
+    background-color: #10111f;
+    border: 1px solid #ff5a5f;
+}
+
+.icon-red {
+    color: #ff5a5f;
+}
+
+.icon-yellow {
+    color: #ffc84a;
+}
+
+.icon-blue {
+    color: #00a6ff;
+}
+
+.icon-green {
+    color: #4aff8b;
+}
+
 
 .footer {
     background-color: #090a14;
@@ -320,6 +410,14 @@ body {
 
     .arrow-right {
         right: 10px;
+    }
+
+    .problem-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .problem-section h2 {
+        font-size: 28px;
     }
 
     .footer-content {
