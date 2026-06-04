@@ -275,6 +275,114 @@ body {
     color: #4aff8b;
 }
 
+.technology-section {
+    background-color: #10111f;
+    padding: 80px 40px 90px;
+    text-align: center;
+}
+
+.technology-section h2 {
+    font-size: 44px;
+    font-weight: 800;
+    color: white;
+    margin: 28px 0 24px;
+}
+
+.technology-description {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 55px;
+}
+
+.technology-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 46px;
+}
+
+.technology-card {
+    min-height: 395px;
+    border-radius: 8px;
+    padding: 28px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technology-image {
+    width: 142px;
+    height: 150px;
+    border-radius: 8px;
+    background-color: #080b16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.technology-image img {
+    max-width: 95px;
+    max-height: 95px;
+}
+
+.technology-card h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.technology-subtitle {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.technology-card p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.18;
+}
+
+.card-green {
+    background-color: #142c24;
+    border: 1px solid #4aff8b;
+}
+
+.card-blue {
+    background-color: #172438;
+    border: 1px solid #58c8ff;
+}
+
+.card-yellow {
+    background-color: #292727;
+    border: 1px solid #ffd34d;
+}
+
+.image-green {
+    border: 1px solid #4aff8b;
+}
+
+.image-blue {
+    border: 1px solid #58c8ff;
+}
+
+.image-yellow {
+    border: 1px solid #ffd34d;
+}
+
+.text-green {
+    color: #4aff8b;
+}
+
+.text-blue {
+    color: #58c8ff;
+}
+
+.text-yellow {
+    color: #ffd34d;
+}
+
 
 .footer {
     background-color: #090a14;
@@ -418,6 +526,14 @@ body {
 
     .problem-section h2 {
         font-size: 28px;
+    }
+
+    .technology-section h2 {
+        font-size: 30px;
+    }
+
+    .technology-grid {
+        grid-template-columns: 1fr;
     }
 
     .footer-content {
