@@ -26,7 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1300px;
+    margin: auto;
 }
 
 #stardevs-logo {
@@ -834,100 +834,4 @@ body {
 
 .text-purple {
     color: #6d63ff;
-}
-
-@media (max-width: 900px) {
-    .nav-links {
-        display: none;
-    }
-
-    .init-content h1 {
-        font-size: 32px;
-    }
-
-    .arrow-left {
-        left: 10px;
-    }
-
-    .arrow-right {
-        right: 10px;
-    }
-
-    .problem-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .problem-section h2 {
-        font-size: 28px;
-    }
-
-    .technology-section h2 {
-        font-size: 30px;
-    }
-
-    .technology-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .objectives-section {
-        padding: 70px 30px;
-    }
-
-    .objectives-header {
-        justify-content: center;
-    }
-
-    .objectives-section h2 {
-        font-size: 32px;
-    }
-
-    .objectives-description {
-        font-size: 18px;
-    }
-
-    .objectives-content {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .objectives-list {
-        gap: 35px;
-        padding-top: 0;
-    }
-
-    .objective-item p {
-        font-size: 18px;
-    }
-
-    .target-section {
-        padding: 70px 30px;
-        max-width: none;
-    }
-
-    .target-section h2 {
-        font-size: 32px;
-    }
-
-    .target-description {
-        font-size: 18px;
-    }
-
-    .target-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .target-card img {
-        height: 320px;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .theme-options {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 }
