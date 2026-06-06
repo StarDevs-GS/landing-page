@@ -585,6 +585,59 @@ body {
     font-weight: normal;
 }
 
+.target-section {
+    background-color: #10111f;
+    padding: 80px 0 90px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.target-section h2 {
+    color: white;
+    font-size: 44px;
+    font-weight: 800;
+    margin: 35px 0 28px;
+}
+
+.target-description {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 44px;
+}
+
+.target-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 46px;
+}
+
+.target-card img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 28px;
+}
+
+.target-card h3 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.target-card h3 i {
+    font-size: 25px;
+}
+
+.target-card p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
 @media (max-width: 900px) {
     .nav-links {
         display: none;
@@ -646,6 +699,28 @@ body {
 
     .objective-item p {
         font-size: 18px;
+    }
+
+    .target-section {
+        padding: 70px 30px;
+        max-width: none;
+    }
+
+    .target-section h2 {
+        font-size: 32px;
+    }
+
+    .target-description {
+        font-size: 18px;
+    }
+
+    .target-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .target-card img {
+        height: 320px;
     }
 
     .footer-content {
