@@ -503,6 +503,88 @@ body {
     outline-offset: 4px;
 }
 
+.objectives-section {
+    background-color: #10111f;
+    padding: 70px 55px 90px;
+    text-align: center;
+}
+
+.objectives-header {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.objectives-section h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin: 35px 0 24px;
+}
+
+.objectives-description {
+    font-size: 21px;
+    color: white;
+    margin-bottom: 52px;
+}
+
+.objectives-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.objectives-images {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    max-width: 430px;
+}
+
+.objectives-images img {
+    width: 70%;
+}
+
+.objectives-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 10px 0 0;
+}
+
+.objective-item {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.objective-number {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    background-color: #6d63ff;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.objective-number.white {
+    background-color: white;
+    color: #6d63ff;
+}
+
+.objective-item p {
+    font-size: 20px;
+    color: white;
+    line-height: 1.25;
+    font-weight: normal;
+}
+
 @media (max-width: 900px) {
     .nav-links {
         display: none;
@@ -534,6 +616,36 @@ body {
 
     .technology-grid {
         grid-template-columns: 1fr;
+    }
+
+    .objectives-section {
+        padding: 70px 30px;
+    }
+
+    .objectives-header {
+        justify-content: center;
+    }
+
+    .objectives-section h2 {
+        font-size: 32px;
+    }
+
+    .objectives-description {
+        font-size: 18px;
+    }
+
+    .objectives-content {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .objectives-list {
+        gap: 35px;
+        padding-top: 0;
+    }
+
+    .objective-item p {
+        font-size: 18px;
     }
 
     .footer-content {
