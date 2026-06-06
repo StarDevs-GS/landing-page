@@ -811,6 +811,7 @@ body {
 .step-title {
     font-size: 20px;
     font-weight: 800;
+    text-align: start;
 }
 
 .title-white {
