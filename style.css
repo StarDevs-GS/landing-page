@@ -638,6 +638,77 @@ body {
     line-height: 1.25;
 }
 
+.benefits-section {
+    background-color: #10111f;
+    padding: 90px 40px;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 44px;
+    font-weight: 800;
+    color: white;
+    margin: 28px 0 18px;
+}
+
+.benefits-description {
+    font-size: 20px;
+    color: #d4d4d4;
+    margin-bottom: 64px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.benefit-card h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    color: #d4d4d4;
+    line-height: 1.4;
+}
+
+.benefit-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.benefit-icon.icon-green {
+    background-color: #142c24;
+    color: #4aff8b;
+}
+
+.benefit-icon.icon-blue {
+    background-color: #172438;
+    color: #58c8ff;
+}
+
+.benefit-icon.icon-red {
+    background-color: #241624;
+    color: #ff5a5f;
+}
+
 @media (max-width: 900px) {
     .nav-links {
         display: none;
