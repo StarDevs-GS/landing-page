@@ -835,3 +835,33 @@ body {
 .text-purple {
     color: #6d63ff;
 }
+
+.purple-circle {
+    background-color: #23123a;
+    border: 2px solid #7c6bff;
+}
+
+body.light-theme, 
+body.light-theme section {
+    background-color: #f4f5f9 !important;
+}
+
+body.light-theme h2,
+body.light-theme .problem-description,
+body.light-theme .technology-description,
+body.light-theme .objectives-description,
+body.light-theme .target-description,
+body.light-theme .benefits-description,
+body.light-theme .application-description,
+body.light-theme .objective-item p,
+body.light-theme .target-card h3,
+body.light-theme .target-card p,
+body.light-theme .benefit-card h3,
+body.light-theme .benefit-card p {
+    color: #10111f !important;
+}
+
+body.purple-theme, 
+body.purple-theme section {
+    background-color: #23123a !important;
+}
