@@ -1,6 +1,9 @@
 const slideImage = document.getElementById("slide-image");
 const leftArrow = document.querySelector(".arrow-left");
 const rightArrow = document.querySelector(".arrow-right");
+const lightButton = document.getElementById('light-theme');
+const darkButton= document.getElementById('dark-theme');
+const purpleButton = document.getElementById('purple-theme');
 
 const images = [
     "./assets/slide1.png",
@@ -39,5 +42,17 @@ function start() {
     rightArrow.addEventListener("click", nextSlide);
     showSlide();
 }
+
+lightButton.addEventListener('click', function() {
+    document.body.className = 'light-theme';
+});
+
+darkButton.addEventListener('click', function() {
+    document.body.className = ''; 
+});
+
+purpleButton.addEventListener('click', function() {
+    document.body.className = 'purple-theme';
+});
 
 start();
