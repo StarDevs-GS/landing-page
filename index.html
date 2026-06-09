@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarDevs</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -346,6 +351,36 @@
         </ul>
     </section>
 
+    <section id="quiz" class="quiz-section">
+        <div id="quiz-content">
+            <span class="section-tag">Quiz</span>
+            <h2 id="quiz-title">1. Pergunta</h2>
+
+            <fieldset class="quiz-options" id="quiz-options"></fieldset>
+
+            <div class="quiz-actions">
+                <button id="quit-quiz" class="quiz-button-outline" type="button">Desistir</button>
+                <button id="next-question" class="quiz-button-filled" type="button">Avançar</button>
+            </div>
+
+            <p id="quiz-page" class="quiz-page">Página 1/10</p>
+            <p id="quiz-message" class="quiz-message"></p>
+        </div>
+
+        <div id="quiz-result" class="quiz-result hidden">
+            <span class="section-tag">Quiz</span>
+            <h2>Obrigada por realizar o quiz!!</h2>
+            <p>Você conseguiu acertar...</p>
+
+            <div class="score-card">
+                <i class="bx bx-trophy"></i>
+                <span id="score-text">0/10</span>
+            </div>
+
+            <a href="#header" class="quiz-home-button">Voltar para a página inicial</a>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-logo">
@@ -373,28 +408,28 @@
                 </div>
 
                 <fieldset class="footer-column theme-column">
-    <h3>Tema</h3>
+                    <h3>Tema</h3>
 
-    <div class="theme-options">
-        <label class="theme-option" for="light-theme">
-            Modo claro
-            <input type="radio" id="light-theme" name="theme">
-            <span class="theme-circle light-circle"></span>
-        </label>
+                    <div class="theme-options">
+                        <label class="theme-option" for="light-theme">
+                            Modo claro
+                            <input type="radio" id="light-theme" name="theme">
+                            <span class="theme-circle light-circle"></span>
+                        </label>
 
-        <label class="theme-option" for="dark-theme">
-            Modo escuro
-            <input type="radio" id="dark-theme" name="theme" checked>
-            <span class="theme-circle dark-circle"></span>
-        </label>
+                        <label class="theme-option" for="dark-theme">
+                            Modo escuro
+                            <input type="radio" id="dark-theme" name="theme" checked>
+                            <span class="theme-circle dark-circle"></span>
+                        </label>
 
-        <label class="theme-option" for="purple-theme">
-            Modo roxo
-            <input type="radio" id="purple-theme" name="theme">
-            <span class="theme-circle purple-circle"></span>
-        </label>
-    </div>
-</fieldset>
+                        <label class="theme-option" for="purple-theme">
+                            Modo roxo
+                            <input type="radio" id="purple-theme" name="theme">
+                            <span class="theme-circle purple-circle"></span>
+                        </label>
+                    </div>
+                </fieldset>
             </div>
         </div>
     </footer>
