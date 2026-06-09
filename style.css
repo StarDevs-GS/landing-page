@@ -939,13 +939,24 @@ body {
     background: none;
     border: 1px solid #6d63ff;
     color: white;
+    transition: 0.3s;
+}
+
+.quiz-button-outline:hover {
+    background-color: #3d2e8f;
+    border-color: #3d2e8f;
 }
 
 .quiz-button-filled,
 .quiz-home-button {
-    background-color: #6d63ff;
-    border: 1px solid #6d63ff;
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
     color: white;
+    transition: 0.3s;
+}
+
+.quiz-button-filled:hover {
+    background-color: var(--purple-dark);
 }
 
 .quiz-page {
