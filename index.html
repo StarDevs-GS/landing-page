@@ -7,8 +7,7 @@
     <title>StarDevs</title>
     <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
     <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght
-                @0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -354,15 +353,17 @@
             <span class="section-tag">Quiz</span>
             <h2 id="quiz-title">1. Pergunta</h2>
 
-            <fieldset class="quiz-options" id="quiz-options"></fieldset>
+            <form id="quiz-form">
+                <fieldset class="quiz-options" id="quiz-options"></fieldset>
 
-            <div class="quiz-actions">
-                <button id="quit-quiz" class="quiz-button-outline" type="button">Desistir</button>
-                <button id="next-question" class="quiz-button-filled" type="button">Avançar</button>
-            </div>
+                <div class="quiz-actions">
+                    <button id="quit-quiz" class="quiz-button-outline" type="button">Desistir</button>
+                    <button id="next-question" class="quiz-button-filled" type="submit">Avançar</button>
+                </div>
 
-            <p id="quiz-page" class="quiz-page">Página 1/10</p>
-            <p id="quiz-message" class="quiz-message"></p>
+                <p id="quiz-page" class="quiz-page">Página 1/10</p>
+                <p id="quiz-message" class="quiz-message"></p>
+            </form>
         </div>
 
         <div id="quiz-result" class="quiz-result hidden">
@@ -409,10 +410,10 @@
                     <h3>Tema</h3>
 
                     <div class="theme-options">
-                        <label class="theme-option" for="light-theme">
-                            Modo claro
-                            <input type="radio" id="light-theme" name="theme">
-                            <span class="theme-circle light-circle"></span>
+                        <label class="theme-option" for="blue-theme">
+                            Modo azul
+                            <input type="radio" id="blue-theme" name="theme">
+                            <span class="theme-circle blue-circle"></span>
                         </label>
 
                         <label class="theme-option" for="dark-theme">

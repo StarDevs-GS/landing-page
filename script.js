@@ -1,16 +1,16 @@
 const slideImage = document.getElementById("slide-image");
 const leftArrow = document.querySelector(".arrow-left");
 const rightArrow = document.querySelector(".arrow-right");
-const lightButton = document.getElementById('light-theme');
+const blueButton = document.getElementById('blue-theme');
 const darkButton = document.getElementById('dark-theme');
 const purpleButton = document.getElementById('purple-theme');
 const quizContent = document.getElementById("quiz-content");
 const quizResult = document.getElementById("quiz-result");
 const quizTitle = document.getElementById("quiz-title");
 const quizOptions = document.getElementById("quiz-options");
+const quizForm = document.getElementById("quiz-form");
 const quizPage = document.getElementById("quiz-page");
 const quizMessage = document.getElementById("quiz-message");
-const nextQuestionButton = document.getElementById("next-question");
 const quitQuizButton = document.getElementById("quit-quiz");
 const scoreText = document.getElementById("score-text");
 
@@ -179,14 +179,16 @@ function showQuestion() {
 
         quizOptions.innerHTML +=
             "<label class='quiz-option' for='answer-" + i + "'>" +
-                "<input id='answer-" + i + "' type='radio' name='quiz-answer' onclick='selectOption(" + i + ")'" + checkedAnswer + ">" +
+                "<input id='answer-" + i + "' type='radio' name='quiz-answer' required onclick='selectOption(" + i + ")'" + checkedAnswer + ">" +
                 "<span class='option-circle'></span>" +
                 "<span>" + question.answers[i] + "</span>" +
             "</label>";
     }
 }
 
-function nextQuestion() {
+function nextQuestion(event) {
+    event.preventDefault();
+
     if (selectedOption === -1) {
         quizMessage.innerText = "Escolha uma alternativa.";
         return;
@@ -223,15 +225,15 @@ function quitQuiz() {
 function start() {
     leftArrow.addEventListener("click", previousSlide);
     rightArrow.addEventListener("click", nextSlide);
-    nextQuestionButton.addEventListener("click", nextQuestion);
+    quizForm.addEventListener("submit", nextQuestion);
     quitQuizButton.addEventListener("click", quitQuiz);
     
     showSlide();
     showQuestion();
 }
 
-lightButton.addEventListener('click', function() {
-    document.body.className = 'light-theme';
+blueButton.addEventListener('click', function() {
+    document.body.className = 'blue-theme';
 });
 
 darkButton.addEventListener('click', function() {
